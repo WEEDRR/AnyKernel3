@@ -41,6 +41,13 @@ backup_file /vendor/etc/msm_irqbalance.conf;
 cp -rf /tmp/anykernel/patch/msm_irqbalance.conf /vendor/etc/msm_irqbalance.conf;
 set_perm 0 0 0644 /vendor/etc/msm_irqbalance.conf;
 
+# Make a backup of vendor build.prop
+restore_file /vendor/build.prop;
+backup_file /vendor/build.prop;
+
+# Add performance tweaks
+append_file /vendor/build.prop "WeebKernelProps" build.prop
+
 ## AnyKernel install
 dump_boot;
 
