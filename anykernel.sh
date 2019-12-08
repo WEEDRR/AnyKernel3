@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=ChipsKernel-Fries
+kernel.string=Fate Kernul
 do.devicecheck=1
 do.modules=0
 do.cleanup=1
@@ -13,7 +13,7 @@ device.name1=X00T
 device.name2=X00TD
 device.name3=ASUS_X00TD
 supported.versions=8.1 - 10
-supported.patchlevels=2019-04 - 2019-09
+supported.patchlevels=2019-04 - 2020-12
 '; } # end properties
 
 # shell variables
