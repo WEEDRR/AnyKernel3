@@ -244,7 +244,7 @@ if [ "$supported_lvl" ]; then
 fi;
 
 sleep 1
-ui_print "- Flashing Chips Image...";
+ui_print "- Flashing Image...";
 core=$($bb grep -oE 'ak.*core.sh' anykernel.sh);
 test -f tools/$core || $bb ln -s $home/tools/ak*-core.sh $home/tools/$core;
 PATH="$home/bin:$PATH" home=$home $bb ash anykernel.sh $2;
@@ -292,5 +292,5 @@ if [ "$(file_getprop anykernel.sh do.cleanup)" == 1 ]; then
 fi;
 
 ui_print "****************************************";
-ui_print "* ChipsKernel-Fries Installed!!!       *";
+ui_print "*                   Installed!!!       *";
 ui_print "****************************************";
