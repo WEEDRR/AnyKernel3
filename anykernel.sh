@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Fate Kernul
+kernel.string=Kamisama Kernul
 do.devicecheck=1
 do.modules=0
 do.systemless=1
