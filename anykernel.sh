@@ -46,7 +46,7 @@ restore_file /vendor/build.prop;
 backup_file /vendor/build.prop;
 
 # Add performance tweaks
-append_file /vendor/build.prop "WeebKernelProps" build.prop
+append_file /vendor/build.prop "NeeSanKernelProps" build.prop
 
 ## AnyKernel install
 dump_boot;
