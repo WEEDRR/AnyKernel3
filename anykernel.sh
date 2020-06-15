@@ -33,21 +33,6 @@ set_perm_recursive 0 0 755 644 $ramdisk/*;
 set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
 
 
-# Make a backup of vendor msm_irqbalance.conf
-restore_file /vendor/etc/msm_irqbalance.conf;
-backup_file /vendor/etc/msm_irqbalance.conf;
-
-# Replace original irq balancer with custom
-cp -rf /tmp/anykernel/patch/msm_irqbalance.conf /vendor/etc/msm_irqbalance.conf;
-set_perm 0 0 0644 /vendor/etc/msm_irqbalance.conf;
-
-# Make a backup of vendor build.prop
-restore_file /vendor/build.prop;
-backup_file /vendor/build.prop;
-
-# Add performance tweaks
-append_file /vendor/build.prop "NeeSanKernelProps" build.prop
-
 ## AnyKernel install
 dump_boot;
 
