@@ -4,16 +4,14 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Ne-San Kernel by Eko and Zul
+kernel.string=ProjectThanksYou
 do.devicecheck=0
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=X00T
-device.name2=X00TD
-device.name3=Asus Max Pro M1
-device.name4=ASUS_X00T
+device.name1=vince
+device.name2=Redmi 5 plus
 '; } # end properties
 
 # shell variables
