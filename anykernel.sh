@@ -9,10 +9,10 @@ do.devicecheck=0
 do.modules=0
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=X00T
-device.name2=X00TD
-device.name3=Asus Max Pro M1
-device.name4=ASUS_X00T
+device.name1=joyeuse
+device.name2=
+device.name3=
+device.name4=
 '; } # end properties
 
 # shell variables
